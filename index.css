@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav a {
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: oklch(70.4% 0.14 182.503);
+}
+
+.icons i {
+  border: solid 2px oklch(70.4% 0.14 182.503);
+  color: oklch(70.4% 0.14 182.503);
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  background: oklch(70.4% 0.14 182.503);
+  color: black;
+}
+
+#btn {
+  box-shadow: 2px 2px 8px oklch(78.611% 0.14076 182.008),-2px -2px 8px oklch(78.611% 0.14076 182.008);
+}
+#image{
+    box-shadow: 2px 2px 10px oklch(78.611% 0.14076 182.008),-2px -2px 10px oklch(78.611% 0.14076 182.008);
+}
+
+/* Animations */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideLeft {
+  animation: slideLeft 1.5s ease forwards;
+}
+.animate-slideRight {
+  animation: slideRight 1.5s ease forwards;
+}

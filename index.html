@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/687c341695.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body class="bg-black text-white font-poppins">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 md:px-12 sticky top-0 bg-black z-50 shadow-md">
+        <h1 class="font-bold text-xl md:text-2xl">Portfolio</h1>
+        <nav class="hidden md:flex gap-6">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu"
+        class="hidden flex-col gap-4 text-center bg-zinc-900 p-4 md:hidden transition-all duration-300">
+        <a class="mx-1" href="#home">Home</a>
+        <a class="mx-1" href="#about">About</a>
+        <a class="mx-1" href="#skills">Skills</a>
+        <a class="mx-1" href="#projects">Projects</a>
+        <a class="mx-1" href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="hero flex flex-col-reverse md:flex-row justify-between items-center mt-10 px-6 md:px-16 text-center md:text-left">
+
+        <!-- Hero Content -->
+        <div class="hero-content md:w-1/2 animate-slideLeft">
+            <h3 class="font-bold text-lg md:text-2xl mb-2">Hello, It's Me</h3>
+            <h1 class="font-bold text-3xl sm:text-4xl md:text-5xl mb-4 text-teal-400">Vamsi Teruvai</h1>
+
+            <!-- Typing Effect Line -->
+            <div class="flex justify-center md:justify-start items-center mb-4">
+                <h3 class="font-bold text-base sm:text-lg md:text-2xl">And I’m a&nbsp;</h3>
+                <span id="typed-role" class="font-bold text-base sm:text-lg md:text-2xl text-teal-400"></span>
+            </div>
+
+            <p class="mb-6 text-gray-300 text-sm sm:text-base">
+                I create modern and responsive websites & applications. Passionate about building full-stack
+                solutions that are fast, scalable, and user-friendly.
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex justify-center md:justify-start gap-4 mb-6">
+                <a href="https://linkedin.com/in/vamsiteruvai" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-teal-400 
+                text-teal-400 hover:bg-teal-400 hover:text-black 
+                transition transform hover:scale-110 hover:shadow-lg">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Vamsiteruvai" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-teal-400 
+                text-teal-400 hover:bg-teal-400 hover:text-black 
+                transition transform hover:scale-110 hover:shadow-lg">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-teal-400 
+                text-teal-400 hover:bg-teal-400 hover:text-black 
+                transition transform hover:scale-110 hover:shadow-lg">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-teal-400 
+                text-teal-400 hover:bg-teal-400 hover:text-black 
+                transition transform hover:scale-110 hover:shadow-lg">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <a href="./assets/Vamsi-CV.pdf" download
+                class="bg-teal-400 py-2 px-5 rounded-full text-black font-semibold shadow-md hover:bg-teal-500 inline-block">
+                Download CV
+            </a>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-img md:w-1/2 flex justify-center animate-slideRight mb-6 md:mb-0">
+            <img src="./assets/profile.jpeg" alt="Profile"
+                class="w-40 h-40 sm:w-52 sm:h-52 md:w-80 md:h-80 rounded-full object-cover shadow-lg">
+        </div>
+    </section>
+
+
+    <!-- about section -->
+    <section id="about" class="px-6 md:px-16 py-10 text-white">
+        <h2 class="text-3xl font-bold text-teal-400 mb-6 text-center">About Me</h2>
+        <div class="max-w-3xl mx-auto text-center md:text-left">
+            <p class="mb-4 text-gray-300">
+                Hi, I’m <span class="text-teal-400 font-semibold">Vamsi Teruvai</span>, a passionate
+                <strong>Full Stack Developer</strong> from Andhra Pradesh, India. I specialize in building
+                responsive, scalable, and user-friendly applications using
+                <strong>Java, JavaScript, React.js, Node.js, SQL, MySQL, and MongoDB</strong>.
+            </p>
+            <p class="mb-4 text-gray-300">
+                I’ve worked on projects like an <strong>E-Commerce Web Application</strong> for wood-based
+                products and a <strong>Car Rental System</strong> using Java Swing and MySQL. These
+                projects strengthened my skills in <strong>frontend & backend development, database
+                    integration, and problem-solving</strong>.
+            </p>
+            <p class="mb-4 text-gray-300">
+                Along with technical expertise, I bring qualities like a
+                <strong>problem-solving mindset, quick learning ability, and strong logical skills</strong>.
+                I enjoy collaborating in teams, continuously learning, and contributing to innovative solutions.
+            </p>
+            <p class="text-gray-300">
+                I’m also certified in <strong>Salesforce Development</strong> and have completed an
+                <strong>AWS Internship</strong>, which has given me exposure to cloud and enterprise
+                technologies.
+            </p>
+            <div class="flex justify-between my-6">
+                <div>
+                    <strong class="text-teal-400 font-semibold">Birthday</strong>
+                    <p class="my-2">2 October 2003</p>
+                    <strong class="text-teal-400 font-semibold">LinkedIn</strong>
+                    <p class="my-2">TERUVAI VAMSI</p>
+                    <strong class="text-teal-400 font-semibold">Phone</strong>
+                    <p class="my-2">+91 9963383840</p>
+                    <strong class="text-teal-400 font-semibold">City</strong>
+                    <p class="my-2">Hyderabad</p>
+                </div>
+                <div>
+                    <strong class="text-teal-400 font-semibold">Age</strong>
+                    <p class="my-2">23</p>
+                    <strong class="text-teal-400 font-semibold">Degree</strong>
+                    <p class="my-2">Bachelor's of Technology</p>
+                    <strong class="text-teal-400 font-semibold">Email</strong>
+                    <p class="my-2">teruvaivamsi9@gmail.com</p>
+                    <strong class="text-teal-400 font-semibold">State</strong>
+                    <p class="my-2">Telangana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="px-6 md:px-16 py-12 bg-black text-white">
+        <h2 class="text-3xl font-bold text-teal-400 mb-8 text-center">My Skills</h2>
+
+        <!-- Technical Skills -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center mb-12">
+            <div class="p-4 bg-zinc-900 rounded-xl shadow-md hover:scale-105 transition">
+                <h3 class="font-semibold text-lg">Frontend</h3>
+                <p class="text-gray-300 text-sm">HTML, CSS, JavaScript, React.js, Swing</p>
+            </div>
+            <div class="p-4 bg-zinc-900 rounded-xl shadow-md hover:scale-105 transition">
+                <h3 class="font-semibold text-lg">Backend</h3>
+                <p class="text-gray-300 text-sm">Java, JDBC, Node.js</p>
+            </div>
+            <div class="p-4 bg-zinc-900 rounded-xl shadow-md hover:scale-105 transition">
+                <h3 class="font-semibold text-lg">Databases</h3>
+                <p class="text-gray-300 text-sm">MySQL, SQL, Oracle, MongoDB</p>
+            </div>
+            <div class="p-4 bg-zinc-900 rounded-xl shadow-md hover:scale-105 transition">
+                <h3 class="font-semibold text-lg">Tools</h3>
+                <p class="text-gray-300 text-sm">Git, GitHub, VS Code, Postman, Eclipse</p>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <h3 class="text-2xl font-bold text-teal-400 mb-6 text-center">Soft Skills</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+            <span class="px-4 py-2 bg-zinc-900 rounded-full shadow-md text-gray-300">Problem Solving</span>
+            <span class="px-4 py-2 bg-zinc-900 rounded-full shadow-md text-gray-300">Quick Learner</span>
+            <span class="px-4 py-2 bg-zinc-900 rounded-full shadow-md text-gray-300">Analytical Thinking</span>
+            <span class="px-4 py-2 bg-zinc-900 rounded-full shadow-md text-gray-300">Team Collaboration</span>
+            <span class="px-4 py-2 bg-zinc-900 rounded-full shadow-md text-gray-300">Hardworking</span>
+            <span class="px-4 py-2 bg-zinc-900 rounded-full shadow-md text-gray-300">Good Communication</span>
+        </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="px-6 md:px-16 py-12 bg-zinc-900 text-white">
+        <h2 class="text-3xl font-bold text-teal-400 mb-8 text-center">My Projects</h2>
+
+        <div class="grid gap-8 md:grid-cols-2">
+
+            <!-- Project 1 -->
+            <div class="bg-black rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
+                <img src="./assets/woodworks.jpg" alt="Wood Works Project" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-2">Wood Works – E-Commerce App</h3>
+                    <p class="text-gray-300 mb-4 text-sm">
+                        A full-stack e-commerce web application for wood-based products, built using
+                        <strong>React.js, Node.js, and MySQL</strong>. It includes
+                        <strong>user authentication, product management, and shopping cart functionality</strong> with a
+                        fully responsive UI for smooth customer experience.
+                    </p>
+                    <div class="flex gap-3">
+                        <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">React.js</span>
+                        <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Node.js</span>
+                        <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-black rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
+                <img src="./assets/carrental.jpg" alt="Car Rental System" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-2">Car Rental System</h3>
+                    <p class="text-gray-300 mb-4 text-sm">
+                        A Java desktop application using <strong>AWT/Swing and MySQL</strong> for booking
+                        and managing car rentals. Features include
+                        <strong>admin management, car availability tracking, statistics view, and CRUD
+                            operations</strong>.
+                        Integrated database with JDBC for efficient data handling.
+                    </p>
+                    <div class="flex gap-3">
+                        <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Java</span>
+                        <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Swing</span>
+                        <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <section id="contact" class="px-6 md:px-16 py-12 bg-black text-white">
+        <h2 class="text-3xl font-bold text-teal-400 mb-8 text-center">Contact Me</h2>
+
+        <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+            <!-- Contact Info -->
+            <div class="space-y-6 text-center md:text-left">
+                <p class="text-lg text-gray-300">
+                    I’m always open to new opportunities and collaborations.
+                    Feel free to reach out to me through any of the channels below:
+                </p>
+
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fas fa-phone text-teal-400"></i>
+                    <span class="text-gray-300">+91 9963383840</span>
+                </div>
+
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fas fa-envelope text-teal-400"></i>
+                    <span class="text-gray-300">teruvaivamsi9@gmail.com</span>
+                </div>
+
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i class="fas fa-map-marker-alt text-teal-400"></i>
+                    <span class="text-gray-300">Nellore, Andhra Pradesh, India</span>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="space-y-4 bg-zinc-900 p-6 rounded-xl shadow-md">
+                <input type="text" placeholder="Your Name"
+                    class="w-full p-3 rounded-md bg-black border border-gray-600 text-white focus:border-teal-400 outline-none">
+                <input type="email" placeholder="Your Email"
+                    class="w-full p-3 rounded-md bg-black border border-gray-600 text-white focus:border-teal-400 outline-none">
+                <textarea rows="4" placeholder="Your Message"
+                    class="w-full p-3 rounded-md bg-black border border-gray-600 text-white focus:border-teal-400 outline-none"></textarea>
+                <button type="submit"
+                    class="w-full bg-teal-400 py-2 px-5 rounded-md text-black font-semibold hover:bg-teal-500">
+                    Send Message
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-zinc-900 text-gray-300 py-6 mt-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+
+            <!-- Branding -->
+            <h2 class="text-xl font-bold text-teal-400">Vamsi Teruvai</h2>
+
+            <!-- Navigation Links -->
+            <nav class="flex gap-4 text-sm">
+                <a href="#home" class="hover:text-teal-400">Home</a>
+                <a href="#about" class="hover:text-teal-400">About</a>
+                <a href="#skills" class="hover:text-teal-400">Skills</a>
+                <a href="#projects" class="hover:text-teal-400">Projects</a>
+                <a href="#contact" class="hover:text-teal-400">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="text-center text-xs text-gray-500 mt-4 border-t border-gray-700 pt-4">
+            © 2025 Vamsi Teruvai. All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
